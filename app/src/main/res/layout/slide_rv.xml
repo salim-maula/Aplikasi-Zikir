@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    app:cardMaxElevation="5dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/slideImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/slideTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="456dp"
+            android:fontFamily="@font/lmmedium"
+            android:padding="10dp"
+            android:text="@string/title"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/transView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/slideDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slideTitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lmregular"
+            android:text="@string/subtitle"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnBaca"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="121dp"
+            android:layout_marginBottom="54dp"
+            android:background="@drawable/tombol_bulat"
+            android:text="@string/baca" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
